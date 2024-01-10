@@ -23,7 +23,7 @@ router.post("/admin",async(req,res)=>{
     }
 })
 
-router.get("/admin/fetch",async(req,res)=>{
+router.get("/admin/fetch",Auth,async(req,res)=>{
     try{
         const result = await student.find();
         return res.status(201).json(result);

@@ -12,14 +12,14 @@ const Smodel = mongoose.Schema({
         type:String,
         required:true
     },
-    students:[{
-        name:{
+    place:{
+        type:String
+    },
+    leader_name:{
             type:String,
             required:true
         },
-        roll_no:{
-            type:String,
-        },
+     
         email:{
             type:String,
             required:true,
@@ -38,9 +38,11 @@ const Smodel = mongoose.Schema({
             unique:[true,"Number already exist"]
     
         },
+        utr:{
+            type:String,
+            required:true
+        }
 
-
-    }]
 })
 
 const student = mongoose.model("team",Smodel);
