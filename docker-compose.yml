@@ -12,6 +12,7 @@ services:
       URL : mongodb+srv://Techfesta:P8179A5572@cluster0.ur2ijgx.mongodb.net/form?retryWrites=true&w=majority
       SECRET_KEY : TechfiestaP8179A5572Developer 
     volumes:
-      - .:/usr/src/app   
+      - .:/usr/src/app  
+      - /usr/src/app/node_modules 
 
       

@@ -35,6 +35,7 @@ try{
     res.status(201).json({team,message:"Form Submitted Successfully"});
 }catch(err){
     res.status(500).json({err});
+    console.log(err)
 }
 })
 app.listen(8080,()=>{
