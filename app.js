@@ -2,9 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const student = require("./models/model");
-const https = require('https');
-const fs = require('fs');
-const path = require("path")
 dotenv.config();
 const app = express();
 app.use(cors());
@@ -47,11 +44,6 @@ try{
     
 }
 })
-const sslServer = https.createServer({
-    key:fs.readFileSync(path.join(__dirname,'./cert/key.pem')),
-    cert:fs.readFileSync(path.join(__dirname,'./cert/cert.pem'))
-},app)
-
-sslServer.listen(8080,()=>{
-    console.log("Secure Server started")
+app.listen(8080,()=>{
+    console.log("server running");
 })

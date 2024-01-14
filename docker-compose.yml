@@ -9,7 +9,7 @@ services:
     ports:
       - "8000:8080"
     environment:
-      URL : mongodb+srv://Techfesta:P8179A5572@cluster0.ur2ijgx.mongodb.net/form?retryWrites=true&w=majority
+      URL : mongodb+srv://litakeatharva24:Atharva242003@techfiesta.bjfi13v.mongodb.net/TechfiestaRegisteration?retryWrites=true&w=majority
       SECRET_KEY : TechfiestaP8179A5572Developer 
     volumes:
       - .:/usr/src/app   
