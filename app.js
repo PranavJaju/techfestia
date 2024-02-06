@@ -22,7 +22,7 @@ app.get("/", async (req, res) => {
 })
 const makeApiRequest = async () => {
     try {
-        const apiEndpoint = "https://techfiesta-server.onrender.com/ping"
+        const apiEndpoint = "https://techfiesta-server.onrender.com"
         const response = await axios.get(apiEndpoint);
         // console.log('API request successful:', response.data);
     } catch (error) {
